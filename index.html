@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+
+</head>
+
+<body>
+    <div class="blur" style="filter: none;">
+        <div class="header">
+            <span class="heading"><b class="mainheading">Tasks</b> Lists</span>
+            <span class="add-list "><i id="add-new-list" class="fas add-btn-js icon-style fa-plus-circle"></i><span
+                    class="display-none"> Add List</span></span>
+        </div>
+        
+
+        <div class="container" style="display: none;">
+            <div class="trip-flex-mobile">
+
+                <div class="triptoparis">Trip to Paris</div>
+
+                <div class="back-opt"><i onclick="backToMainList(this)"
+                        class="fas backToMainList icon-style fa-arrow-circle-left"></i><span class="hide-them">
+                        Back</span> </div>
+            </div>
+        </div>
+
+
+        <div class="boxes"></div>
+        <div class="noTodo">Click on the Add Icon to Start</div>
+        <div class="singlecardcontainer"></div>
+
+
+    </div>
+   
+
+
+
+
+    <!-- addNewList popup -->
+
+    <div id="addNewList" class="box-item-add box-item-add1" style="display: none;">
+        <div class="subheading">Add New List</div>
+        <div class="new-item-input"><input type="text" name="new-item" id="inputBoxList" class="input-box"></div><br>
+        <div class="aiway"> <span id="add-btn" class="add-new-list-btn add-btn">ADD</span><span
+                class="close add-btn">Close</span></div>
+    </div>
+
+
+    <!-- add-new-item-box popup -->
+    <div id="add-new-item-box" style="display: none;" class="box-item-add box-item-add2">
+        <div class="subheading">Add New Item</div>
+        <div class="new-item-input"><input type="text" name="new-item" id="inputBoxItem" class="input-box" ></div><br>
+        <div class="aiway"> <span id="addItem" onclick="addingDataIntoCard(this)" class="add-btn add-new-item-btn">
+                ADD</span><span class="close add-btn" id ="listClose">Close</span></div>
+    </div>
+
+
+    <!-- single box -->
+    <div style="display: none;">
+        <div class="container">
+            <div class="trip-flex-mobile">
+
+                <div class="triptoparis before-after-line">Trip to Paris</div>
+
+                <div class="back-opt"><i class="fas icon-style fa-arrow-circle-left"></i><span class="hide-them">
+                        Back</span> </div>
+            </div>
+        </div>
+
+
+        <div class="box-main">
+            <h1 class="subhead"></h1>
+            <hr style="width: 70%; text-align: right; margin-right: 0;">
+            <h2 class="completed2"></h2>
+            <div class="checkbox"><input type="checkbox">
+                <h2 style="display: inline;"></h2>
+            </div>
+            <i id="show-addItem-box" class="fas icon-style-2 fa-plus-circle"> </i>
+        </div>
+    </div>
+
+
+
+
+    <!-- <a class="page-change" href="/subindex.html">Click Here for Page 2</a> -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
